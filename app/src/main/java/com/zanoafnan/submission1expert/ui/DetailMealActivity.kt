@@ -47,7 +47,7 @@ class DetailMealActivity : AppCompatActivity() {
             Glide.with(binding.root.context)
                 .load(detailMeal.strMealThumb)
                 .into(binding.ivProfileDetail)
-            //binding.tvMealIdValue.text = detailMeal.id.toString()
+            binding.tvMealIdValue.text = detailMeal.strInstructions
             //binding.tvNodeIdValue.text = detailMeal.nodeId
 
 

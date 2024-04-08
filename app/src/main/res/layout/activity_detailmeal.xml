@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/tvLoginDetail"
@@ -11,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
         android:gravity="center"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@+id/tvName"
         tools:layout_editor_absoluteX="0dp"
         tools:text="Nama Meal" />
@@ -22,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
         android:gravity="center"
-        android:textSize="21dp"
+        android:textSize="21sp"
         app:layout_constraintTop_toBottomOf="@+id/ivProfileDetail"
         tools:layout_editor_absoluteX="0dp"
         tools:text="Nama Meal" />
@@ -37,26 +41,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <TextView
-        android:id="@+id/tvMealId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="26dp"
-        android:text="Meal ID"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvLoginDetail" />
-
-    <TextView
-        android:id="@+id/tvMealIdValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="18dp"
-        android:text="Meal ID value"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMealId" />
 
     <!--
     <FrameLayout
@@ -99,13 +83,35 @@
 
     </com.google.android.material.tabs.TabLayout> -->
 
+        <TextView
+            android:id="@+id/tvMealId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Cooking Instructions"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLoginDetail" />
+
+        <TextView
+        android:id="@+id/tvMealIdValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Meal inst "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMealId" />
+
     <TextView
         android:id="@+id/tvNodeId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="92dp"
-        android:text="Node ID"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvLoginDetail" />
 
@@ -113,9 +119,8 @@
         android:id="@+id/tvNodeIdValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
-        android:layout_marginTop="18dp"
-        android:text="Node ID value"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvNodeId" />
 
@@ -144,5 +149,6 @@
         app:srcCompat="@drawable/favorite_border" />
 
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
