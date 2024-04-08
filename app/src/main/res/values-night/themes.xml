@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Submission1Expert" parent="Theme.Material3.DayNight">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat">
+        <!-- Tema aplikasi dark mode -->
+        <item name="android:windowBackground">@color/colorBackgroundDark</item>
+        <item name="android:textColorPrimary">@color/colorTextDark</item>
+        <!-- Tambahkan atribut-atribut lain yang sesuai dengan dark mode -->
+    </style>
+
+</resources>
